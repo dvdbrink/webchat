@@ -1,0 +1,69 @@
+body {
+    font-family: "Trebuchet MS", Sans, Verdana;
+}
+.no-space [class*="span"] {
+    margin-left: 0;
+}
+#error.alert {
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+#error, #chat {
+    display: none;
+}
+#serverip, #serverport, #name, #color, #connect, #message, #send, .messagebox, .userlist {
+    max-width: 100%;
+    width: 100%;
+}
+#grouplist {
+    margin-bottom: 0px;
+}
+#grouplist>li.active>a {
+    background-color: whitesmoke;
+}
+#grouplist>li:not(.active)>a:hover {
+    cursor: pointer;
+}
+#groups {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+.messagebox, .userlist {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.messagebox p {
+    margin: 5px 8px 10px 8px;
+    width: 100%;
+    word-wrap: break-word;
+}
+.messagebox p span {
+    padding-right: 10px;
+}
+.messagebox p span.time {
+    color: gray;
+    font-size: 0.8em;
+}
+.messagebox p span.user {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.messagebox p span.message {
+    color: black;
+    font-size: 1.5em;
+}
+.userlist li {
+    font-weight: bold;
+}
+.userlist li.user {
+    margin: 0 8px 2px 8px;
+    font-size: 1.1em;
+}
